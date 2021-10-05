@@ -1,2 +1,3 @@
 # opengl-ex
-# opengl-ex
+
+Project setup with opengl

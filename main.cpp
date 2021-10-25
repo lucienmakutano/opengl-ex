@@ -20,17 +20,17 @@ int main() {
         return -1;
     }
 
-    std::cout << gladLoadGL() << std::endl;
-//    glViewport(0, 0, 800, 600);
-//    glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
-//    glClear(GL_COLOR_BUFFER_BIT);
-//    glfwSwapBuffers(window);
-
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
     }
 
     glfwMakeContextCurrent(window);
+
+    std::cout << gladLoadGL() << std::endl;
+    glViewport(0, 0, 800, 600);
+    glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glfwSwapBuffers(window);
 
     glfwDestroyWindow(window);
     glfwTerminate();
